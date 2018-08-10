@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LivingRoomCutscene : MonoBehaviour
 {
@@ -8,13 +9,19 @@ public class LivingRoomCutscene : MonoBehaviour
     public GameObject CutsceneCam;
     public GameObject Dice;
     public GameObject Trigger;
+    public Text PressE;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        Player.SetActive(false);
-        CutsceneCam.SetActive(true);
-        Dice.SetActive(true);
-        StartCoroutine(EndAnim());
+        PressE.text = "Press E to Look at picture";
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Player.SetActive(false);
+            CutsceneCam.SetActive(true);
+            Dice.SetActive(true);
+            StartCoroutine(EndAnim());
+        }
     }
 
     IEnumerator EndAnim()
@@ -24,6 +31,7 @@ public class LivingRoomCutscene : MonoBehaviour
         CutsceneCam.SetActive(false);
         Dice.SetActive(false);
         Trigger.SetActive(false);
+        PressE.text = " ";
     }
 
 }
