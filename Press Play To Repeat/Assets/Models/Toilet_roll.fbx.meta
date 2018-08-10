@@ -1,35 +1,30 @@
 fileFormatVersion: 2
-guid: ea90797f5a8073e4cbc72f859e3782b8
-timeCreated: 18446744011573954816
+guid: 5c4c32c2a5f803d429dc1511d26e57e4
+timeCreated: 1533862043
+licenseType: Pro
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: base
-    100002: button
+    100000: pCylinder3
+    100002: pPipe1
     100004: //RootNode
-    400000: base
-    400002: button
+    400000: pCylinder3
+    400002: pPipe1
     400004: //RootNode
-    2300000: base
-    2300002: button
-    3300000: base
-    3300002: button
-    4300000: base
-    4300002: button
-    6400000: base
-    6400002: button
-    9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: base_material
-    second: {fileID: 2100000, guid: 366679cf3713065428e131e78f9593ee, type: 2}
+    2100000: lambert2
+    2100002: lambert1
+    2300000: pCylinder3
+    2300002: pPipe1
+    3300000: pCylinder3
+    3300002: pPipe1
+    4300000: pPipe1
+    4300002: pCylinder3
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
-    materialSearch: 2
-    materialLocation: 0
+    materialSearch: 1
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -56,13 +51,13 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
-    importVisibility: 0
+    addColliders: 0
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -77,9 +72,9 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 4
-    normalCalculationMode: 0
-  importAnimation: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
@@ -96,11 +91,11 @@ ModelImporter:
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
-    skeletonHasParents: 0
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
   humanoidOversampling: 1
-  additionalBone: 1
+  additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
