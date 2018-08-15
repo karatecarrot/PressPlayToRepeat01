@@ -5,21 +5,17 @@ using UnityEngine.UI;
 
 public class LivingRoomCutscene : MonoBehaviour
 {
-    public GameObject Player;
-    public GameObject CutsceneCam;
-    public GameObject Dice;
-    public GameObject Trigger;
-    public Text PressE;
-
     private void OnTriggerStay(Collider other)
     {
-        PressE.text = "Press E to Look at picture";
+        _GameManager.instance.Gametext.text = "Press E to Look at picture";
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Player.SetActive(false);
-            CutsceneCam.SetActive(true);
-            Dice.SetActive(true);
+            _GameManager.instance.Player.SetActive(false);
+            _GameManager.instance.CutsceneCam.SetActive(true);
+            _GameManager.instance.Dice.SetActive(true);
+            _GameManager.instance.Gametext.text = " ";
+            _GameManager.instance.Picture.enabled = false;
             StartCoroutine(EndAnim());
         }
     }
@@ -27,11 +23,10 @@ public class LivingRoomCutscene : MonoBehaviour
     IEnumerator EndAnim()
     {
         yield return new WaitForSeconds(13.5f);
-        Player.SetActive(true);
-        CutsceneCam.SetActive(false);
-        Dice.SetActive(false);
-        Trigger.SetActive(false);
-        PressE.text = " ";
+        _GameManager.instance.Player.SetActive(true);
+        _GameManager.instance.CutsceneCam.SetActive(false);
+        _GameManager.instance.Dice.SetActive(false);
+        _GameManager.instance.Trigger.SetActive(false);
     }
 
 }

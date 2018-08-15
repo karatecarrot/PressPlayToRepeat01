@@ -3961,7 +3961,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rainSkybox: {fileID: 2100000, guid: 2039a0ad0a9d05549928b70362f54902, type: 2}
-  rainText: {fileID: 0}
+  Gametext: {fileID: 1599420617}
+  Player: {fileID: 2002730862}
+  CutsceneCam: {fileID: 912277713}
+  Dice: {fileID: 1342864720}
+  Trigger: {fileID: 940994831}
+  Picture: {fileID: 1952719222}
 --- !u!4 &827116140
 Transform:
   m_ObjectHideFlags: 0
@@ -4543,11 +4548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3b1ac5c0fdf014296a02a78a1aaac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 2002730862}
-  CutsceneCam: {fileID: 912277713}
-  Dice: {fileID: 1342864720}
-  Trigger: {fileID: 940994831}
-  PressE: {fileID: 1599420617}
 --- !u!23 &940994833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10275,6 +10275,7 @@ GameObject:
   - component: {fileID: 1952719220}
   - component: {fileID: 1952719219}
   - component: {fileID: 1952719218}
+  - component: {fileID: 1952719222}
   m_Layer: 0
   m_Name: Picture
   m_TagString: Untagged
@@ -10348,6 +10349,23 @@ Transform:
   m_Father: {fileID: 1675451264}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!95 &1952719222
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952719217}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 46a49f5bc48862f47871b2398af4ed52, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1955320645
 GameObject:
   m_ObjectHideFlags: 0

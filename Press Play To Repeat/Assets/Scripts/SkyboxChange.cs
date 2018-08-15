@@ -3,11 +3,9 @@ using UnityEngine;
 
 public class SkyboxChange : MonoBehaviour
 {
-
-
     private void OnTriggerStay(Collider other)
     {
-        _GameManager.instance.rainText.text = "Press E to water the plants.";
+        _GameManager.instance.Gametext.text = "Press E to water the plants.";
         if (Input.GetKeyDown(KeyCode.E))
         {
             ChangeSkybox(_GameManager.instance.rainSkybox);

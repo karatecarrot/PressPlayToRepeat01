@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class _GameManager : MonoBehaviour {
+public class _GameManager : MonoBehaviour
+{
 
     #region Singleton
     public static _GameManager instance;
@@ -17,6 +18,19 @@ public class _GameManager : MonoBehaviour {
     }
     #endregion
 
+    [Header("Skybox")]
     public Material rainSkybox;
-    public Text rainText;
+
+    [Space]
+    [Header ("General")]
+    public Text Gametext;
+
+    [Space]
+    [Header("Living Room Cutscene")]
+    public GameObject Player;
+    public GameObject CutsceneCam;
+    public GameObject Dice;
+    public GameObject Trigger;
+    public Animator Picture;
+
 }
