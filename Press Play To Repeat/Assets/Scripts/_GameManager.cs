@@ -33,4 +33,8 @@ public class _GameManager : MonoBehaviour
     public GameObject Trigger;
     public Animator Picture;
 
+    [Space]
+    [Header("Breakfast")]
+    public GameObject Plate;
+
 }

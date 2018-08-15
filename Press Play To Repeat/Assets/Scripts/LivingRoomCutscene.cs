@@ -15,7 +15,7 @@ public class LivingRoomCutscene : MonoBehaviour
             _GameManager.instance.CutsceneCam.SetActive(true);
             _GameManager.instance.Dice.SetActive(true);
             _GameManager.instance.Gametext.text = " ";
-            _GameManager.instance.Picture.enabled = false;
+            _GameManager.instance.Picture.SetBool("End", true);
             StartCoroutine(EndAnim());
         }
     }

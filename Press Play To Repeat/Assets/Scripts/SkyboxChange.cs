@@ -8,6 +8,7 @@ public class SkyboxChange : MonoBehaviour
         _GameManager.instance.Gametext.text = "Press E to water the plants.";
         if (Input.GetKeyDown(KeyCode.E))
         {
+            _GameManager.instance.Gametext.text = "   ";
             ChangeSkybox(_GameManager.instance.rainSkybox);
         }
     }
