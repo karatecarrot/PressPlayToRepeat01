@@ -6,7 +6,7 @@ public class SkyboxChange : MonoBehaviour
 {
     private void OnTriggerStay(Collider other)
     {
-        if (_GameManager.instance.raining == false)
+        if (_GameManager.instance.raining == false) // checking if the rain has started prevnting the player from starting it more than once.
         {
             _GameManager.instance.gameText.text = "Press E to water the plants.";
             if (Input.GetKeyDown(KeyCode.E))
@@ -20,6 +20,7 @@ public class SkyboxChange : MonoBehaviour
 
     private void Update()
     {
+        // changing the intensity of the light to make to look more gloomy when raining.
         if (_GameManager.instance.raining == true)
         {
             if (_GameManager.instance.DirectionalLight.intensity >= 0.5f)
@@ -34,6 +35,7 @@ public class SkyboxChange : MonoBehaviour
 
     public void ChangeSkybox (Material skybox)
     {
+        // setting the skybox
         RenderSettings.skybox = skybox;
 	}
 }

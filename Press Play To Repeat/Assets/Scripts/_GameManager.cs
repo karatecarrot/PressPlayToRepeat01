@@ -52,5 +52,6 @@ public class _GameManager : MonoBehaviour
 
     [Space]
     [Header("Sit")]
-    public GameObject sitcam;    
+    public GameObject sitcam;
+    public bool isSiting;
 }

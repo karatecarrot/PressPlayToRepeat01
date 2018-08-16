@@ -11,6 +11,8 @@ public class LivingRoomCutscene : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
+            // starting the animation by pressing E.
+            Debug.Log("Starting Animation");
             _GameManager.instance.Player.SetActive(false);
             _GameManager.instance.cutsceneCam.SetActive(true);
             _GameManager.instance.Dice.SetActive(true);
@@ -22,11 +24,14 @@ public class LivingRoomCutscene : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
+        //changing the game text to be blank.
         _GameManager.instance.gameText.text = " ";
     }
 
     IEnumerator EndAnim()
     {
+        //sets up the animation and waits fort it to finish.
+        Debug.Log("Ending Animation");
         yield return new WaitForSeconds(13.5f);
         _GameManager.instance.Player.SetActive(true);
         _GameManager.instance.cutsceneCam.SetActive(false);
