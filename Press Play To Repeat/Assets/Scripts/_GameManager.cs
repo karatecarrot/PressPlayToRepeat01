@@ -41,10 +41,16 @@ public class _GameManager : MonoBehaviour
     [Header("Breakfast")]
     public GameObject Plate;
     public GameObject Dishes;
+    public AudioSource plateOnTable;
     public bool Eaten;
+    public GameObject sitDown;
 
-    //[Space]
-    //[Header ("Eating")]
-    //public GameObject Plate2;
-    //public GameObject foodCamera;
+    [Space]
+    [Header ("sitting")]
+    public GameObject Plate2;
+    public GameObject foodCamera;
+
+    [Space]
+    [Header("Sit")]
+    public GameObject sitcam;    
 }

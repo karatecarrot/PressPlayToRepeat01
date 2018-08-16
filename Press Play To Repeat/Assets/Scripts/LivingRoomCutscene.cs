@@ -34,5 +34,4 @@ public class LivingRoomCutscene : MonoBehaviour
         _GameManager.instance.Trigger.SetActive(false);
         _GameManager.instance.Grandson.SetActive(false);
     }
-
 }
