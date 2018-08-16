@@ -44,6 +44,7 @@ public class _GameManager : MonoBehaviour
     public AudioSource plateOnTable;
     public bool Eaten;
     public GameObject sitDown;
+    public GameObject breakfastTrigger;
 
     [Space]
     [Header ("sitting")]
@@ -53,5 +54,5 @@ public class _GameManager : MonoBehaviour
     [Space]
     [Header("Sit")]
     public GameObject sitcam;
-    public bool isSiting;
+    public bool isSitting;
 }

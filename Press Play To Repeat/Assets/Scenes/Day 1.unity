@@ -705,6 +705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dca6f47ad9f4774a8cf313a9315ef52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TeleportTo: {fileID: 1420153236}
 --- !u!65 &94150752
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7587,9 +7588,11 @@ MonoBehaviour:
   plateOnTable: {fileID: 1300371813}
   Eaten: 0
   sitDown: {fileID: 94150749}
+  breakfastTrigger: {fileID: 559241792}
   Plate2: {fileID: 864002287}
   foodCamera: {fileID: 1540829815}
   sitcam: {fileID: 1540829815}
+  isSitting: 0
 --- !u!4 &827116140
 Transform:
   m_ObjectHideFlags: 0
@@ -9405,6 +9408,7 @@ Transform:
   m_Children:
   - {fileID: 1540829819}
   - {fileID: 94150750}
+  - {fileID: 1420153236}
   m_Father: {fileID: 1675451264}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11196,6 +11200,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400006, guid: cfd6aa0abb220354dabd95d8f4db7017, type: 3}
   m_PrefabInternal: {fileID: 2004628606}
+--- !u!1 &1420153235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1420153236}
+  m_Layer: 0
+  m_Name: Teleport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1420153236
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420153235}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.732, y: 2.2863972, z: 11.92}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1114227220}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1436069812
 Prefab:
   m_ObjectHideFlags: 0
@@ -13121,6 +13153,14 @@ Prefab:
       propertyPath: m_Name
       value: Breakfast (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 94d06dad655f13045943136cdfc6066e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f1584c212f8538843bf894ae7a1b5b51, type: 2}
+    - target: {fileID: 2300000, guid: 94d06dad655f13045943136cdfc6066e, type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5704e687969d70f40b15f93e667c646a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94d06dad655f13045943136cdfc6066e, type: 3}
   m_IsPrefabParent: 0
