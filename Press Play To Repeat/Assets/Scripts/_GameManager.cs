@@ -34,6 +34,7 @@ public class _GameManager : MonoBehaviour
     public GameObject Dice;
     public GameObject Trigger;
     public Animator Picture;
+    public GameObject Grandson;
 
     [Space]
     [Header("Breakfast")]
@@ -44,6 +45,6 @@ public class _GameManager : MonoBehaviour
 
     [Space]
     [Header ("Eating")]
-    public GameObject Food;
+    public GameObject Plate2;
 
 }
