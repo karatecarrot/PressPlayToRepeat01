@@ -22,6 +22,7 @@ public class _GameManager : MonoBehaviour
     public Material rainSkybox;
     public GameObject rain;
     public bool raining;
+    public Light DirectionalLight;
 
     [Space]
     [Header ("General")]
@@ -40,11 +41,10 @@ public class _GameManager : MonoBehaviour
     [Header("Breakfast")]
     public GameObject Plate;
     public GameObject Dishes;
-    public GameObject foodCamera;
     public bool Eaten;
 
-    [Space]
-    [Header ("Eating")]
-    public GameObject Plate2;
-
+    //[Space]
+    //[Header ("Eating")]
+    //public GameObject Plate2;
+    //public GameObject foodCamera;
 }

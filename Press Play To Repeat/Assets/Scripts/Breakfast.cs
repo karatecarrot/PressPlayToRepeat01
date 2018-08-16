@@ -12,7 +12,6 @@ public class Breakfast : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 _GameManager.instance.Player.SetActive(false);
-                _GameManager.instance.foodCamera.SetActive(true);
                 _GameManager.instance.Plate.SetActive(true);
                 _GameManager.instance.Dishes.SetActive(true);
             }

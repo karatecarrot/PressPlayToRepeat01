@@ -1,18 +1,20 @@
 fileFormatVersion: 2
-guid: 96ddf8d234eb61d459ffe81a1e904abc
-timeCreated: 1534381567
+guid: 94d06dad655f13045943136cdfc6066e
+timeCreated: 1534387459
 licenseType: Pro
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: lambert5
     2100002: lambert3
-    2100004: lambert2
+    2100004: lambert1
+    2100006: lambert2
+    2100008: lambert4
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube3
+    4300000: pCube5
   externalObjects: {}
   materials:
     importMaterials: 1

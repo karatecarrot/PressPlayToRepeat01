@@ -20,6 +20,10 @@ public class LivingRoomCutscene : MonoBehaviour
             StartCoroutine(EndAnim());
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        _GameManager.instance.gameText.text = " ";
+    }
 
     IEnumerator EndAnim()
     {
@@ -28,6 +32,7 @@ public class LivingRoomCutscene : MonoBehaviour
         _GameManager.instance.cutsceneCam.SetActive(false);
         _GameManager.instance.Dice.SetActive(false);
         _GameManager.instance.Trigger.SetActive(false);
+        _GameManager.instance.Grandson.SetActive(false);
     }
 
 }

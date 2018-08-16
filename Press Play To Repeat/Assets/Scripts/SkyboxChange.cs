@@ -17,6 +17,16 @@ public class SkyboxChange : MonoBehaviour
             }
         }
     }
+
+    private void Update()
+    {
+        if (_GameManager.instance.raining == true)
+        {
+            if (_GameManager.instance.DirectionalLight.intensity >= 0.5f)
+                _GameManager.instance.DirectionalLight.intensity -= Time.deltaTime;
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         _GameManager.instance.gameText.text = " ";
