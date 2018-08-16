@@ -6,12 +6,22 @@ public class Breakfast : MonoBehaviour
 {
     public void OnTriggerStay(Collider other)
     {
-        _GameManager.instance.gameText.text = "Press E to Make Breakfast";
-        if (Input.GetKeyDown(KeyCode.E))
+        if (_GameManager.instance.Eaten == false)
         {
-            _GameManager.instance.gameText.text = " ";
-
+            _GameManager.instance.gameText.text = "Press E to Make Breakfast";
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                _GameManager.instance.Player.SetActive(false);
+                _GameManager.instance.foodCamera.SetActive(true);
+                _GameManager.instance.Plate.SetActive(true);
+                _GameManager.instance.Dishes.SetActive(true);
+            }
         }
+
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        _GameManager.instance.gameText.text = " ";
     }
 
 }

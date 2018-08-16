@@ -38,5 +38,12 @@ public class _GameManager : MonoBehaviour
     [Space]
     [Header("Breakfast")]
     public GameObject Plate;
+    public GameObject Dishes;
+    public GameObject foodCamera;
+    public bool Eaten;
+
+    [Space]
+    [Header ("Eating")]
+    public GameObject Food;
 
 }
