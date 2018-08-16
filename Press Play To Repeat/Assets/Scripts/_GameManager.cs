@@ -20,15 +20,17 @@ public class _GameManager : MonoBehaviour
 
     [Header("Skybox")]
     public Material rainSkybox;
+    public GameObject rain;
+    public bool raining;
 
     [Space]
     [Header ("General")]
-    public Text Gametext;
+    public Text gameText;
 
     [Space]
     [Header("Living Room Cutscene")]
     public GameObject Player;
-    public GameObject CutsceneCam;
+    public GameObject cutsceneCam;
     public GameObject Dice;
     public GameObject Trigger;
     public Animator Picture;

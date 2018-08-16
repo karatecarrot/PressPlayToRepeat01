@@ -7,14 +7,14 @@ public class LivingRoomCutscene : MonoBehaviour
 {
     private void OnTriggerStay(Collider other)
     {
-        _GameManager.instance.Gametext.text = "Press E to Look at picture";
+        _GameManager.instance.gameText.text = "Press E to Look at picture";
 
         if (Input.GetKeyDown(KeyCode.E))
         {
             _GameManager.instance.Player.SetActive(false);
-            _GameManager.instance.CutsceneCam.SetActive(true);
+            _GameManager.instance.cutsceneCam.SetActive(true);
             _GameManager.instance.Dice.SetActive(true);
-            _GameManager.instance.Gametext.text = " ";
+            _GameManager.instance.gameText.text = " ";
             _GameManager.instance.Picture.SetBool("End", true);
             StartCoroutine(EndAnim());
         }
@@ -24,7 +24,7 @@ public class LivingRoomCutscene : MonoBehaviour
     {
         yield return new WaitForSeconds(13.5f);
         _GameManager.instance.Player.SetActive(true);
-        _GameManager.instance.CutsceneCam.SetActive(false);
+        _GameManager.instance.cutsceneCam.SetActive(false);
         _GameManager.instance.Dice.SetActive(false);
         _GameManager.instance.Trigger.SetActive(false);
     }

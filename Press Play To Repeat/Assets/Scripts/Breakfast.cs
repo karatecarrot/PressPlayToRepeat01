@@ -6,10 +6,10 @@ public class Breakfast : MonoBehaviour
 {
     public void OnTriggerStay(Collider other)
     {
-        _GameManager.instance.Gametext.text = "Press E to Make Breakfast";
+        _GameManager.instance.gameText.text = "Press E to Make Breakfast";
         if (Input.GetKeyDown(KeyCode.E))
         {
-            _GameManager.instance.Gametext.text = " ";
+            _GameManager.instance.gameText.text = " ";
 
         }
     }
