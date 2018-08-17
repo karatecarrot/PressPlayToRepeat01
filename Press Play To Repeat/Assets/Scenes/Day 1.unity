@@ -7589,6 +7589,7 @@ MonoBehaviour:
   Eaten: 0
   sitDown: {fileID: 94150749}
   breakfastTrigger: {fileID: 559241792}
+  cupboard: {fileID: 1655342478}
   Plate2: {fileID: 864002287}
   foodCamera: {fileID: 1540829815}
   sitcam: {fileID: 1540829815}
@@ -11222,7 +11223,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1420153235}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.732, y: 2.2863972, z: 11.92}
+  m_LocalPosition: {x: 4.732, y: 1.881, z: 11.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1114227220}
@@ -12691,6 +12692,27 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 87ad1332cfca6934ea307ce26bfc9dec, type: 3}
   m_PrefabInternal: {fileID: 2074760805}
+--- !u!1 &1655342474 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 4a07e413435eb274ea1ee086f1b0f6a6, type: 3}
+  m_PrefabInternal: {fileID: 1058642875}
+--- !u!95 &1655342478
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655342474}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 05e42b971063f114f852d40ac35156a7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1659584379
 Prefab:
   m_ObjectHideFlags: 0

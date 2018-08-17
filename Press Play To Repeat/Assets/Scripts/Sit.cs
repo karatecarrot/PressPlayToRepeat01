@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Sit : MonoBehaviour
 {
-    public void Update()
-    {
-        if (_GameManager.instance.isSitting == true)
-        {
-            _GameManager.instance.breakfastTrigger.SetActive(false);
-            _GameManager.instance.sitDown.SetActive(false);
-        }
-    }
+    //public void Update()
+    //{
+    //    if (_GameManager.instance.isSitting == true)
+    //    {
+    //        _GameManager.instance.breakfastTrigger.SetActive(false);
+    //        _GameManager.instance.sitDown.SetActive(false);
+    //    }
+    //}
     public Transform TeleportTo;
     private void OnTriggerStay(Collider other)
     {

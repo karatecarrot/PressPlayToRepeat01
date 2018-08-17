@@ -45,6 +45,7 @@ public class _GameManager : MonoBehaviour
     public bool Eaten;
     public GameObject sitDown;
     public GameObject breakfastTrigger;
+    public Animator cupboard;
 
     [Space]
     [Header ("sitting")]
