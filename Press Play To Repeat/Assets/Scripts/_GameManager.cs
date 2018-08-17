@@ -28,12 +28,11 @@ public class _GameManager : MonoBehaviour
     public Animator Tap;
     public bool checkpoint1;
 
-    [Space]
     [Header("Bedroom")]
     public GameObject endTrigger;
     public GameObject endCamera;
+    public GameObject endFade;
 
-    [Space]
     [Header("Living Room Cutscene")]
     public GameObject Player;
     public GameObject cutsceneCam;
@@ -43,7 +42,6 @@ public class _GameManager : MonoBehaviour
     public GameObject Grandson;
     public bool checkpoint2;
 
-    [Space]
     [Header("Breakfast")]
     public GameObject Plate;
     public GameObject Dishes;
@@ -54,18 +52,15 @@ public class _GameManager : MonoBehaviour
     public Animator cupboard;
     public bool checkpoint3;
 
-    [Space]
     [Header ("sitting")]
     public GameObject Plate2;
     public GameObject foodCamera;
 
-    [Space]
     [Header("Sit")]
     public GameObject sitcam;
     public bool isSitting;
     public bool checkpoint4;
 
-    [Space]
     [Header("Dishes")]
     public GameObject washingUp;
     public bool Teleported;
@@ -75,7 +70,19 @@ public class _GameManager : MonoBehaviour
     {
         if (checkpoint1 == true && checkpoint2 == true && checkpoint3 == true && checkpoint4 == true && checkpoint5 == true)
         {
+            Debug.Log("End Activated");
             endTrigger.SetActive(true);
         }
+    }
+    public AudioSource heartRateMonitor;
+    private void Start()
+    {
+        StartCoroutine(Hospital());
+        Debug.Log("heart rate monitor in 1 min");
+    }
+    IEnumerator Hospital()
+    {
+        yield return new WaitForSeconds(30);
+        heartRateMonitor.Play(0);
     }
 }
