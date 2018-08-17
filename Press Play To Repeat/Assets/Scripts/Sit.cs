@@ -28,6 +28,7 @@ public class Sit : MonoBehaviour
         _GameManager.instance.sitcam.SetActive(false);
         _GameManager.instance.Plate2.SetActive(false);
         _GameManager.instance.sitDown.SetActive(false);
+        _GameManager.instance.checkpoint4 = true;
     }
 
 }

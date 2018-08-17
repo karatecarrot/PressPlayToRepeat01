@@ -16,6 +16,7 @@ public class Breakfast : MonoBehaviour
                 _GameManager.instance.plateOnTable.Play(1);
                 _GameManager.instance.sitDown.SetActive(true);
                 _GameManager.instance.cupboard.SetBool("kitchenEnd", true);
+                _GameManager.instance.checkpoint3 = true;
             }
         }
         if (_GameManager.instance.isSitting == true)

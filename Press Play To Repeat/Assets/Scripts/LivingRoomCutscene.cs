@@ -38,5 +38,6 @@ public class LivingRoomCutscene : MonoBehaviour
         _GameManager.instance.Dice.SetActive(false);
         _GameManager.instance.Trigger.SetActive(false);
         _GameManager.instance.Grandson.SetActive(false);
+        _GameManager.instance.checkpoint1 = true;
     }
 }
