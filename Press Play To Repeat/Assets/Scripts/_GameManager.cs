@@ -23,6 +23,7 @@ public class _GameManager : MonoBehaviour
     public GameObject rain;
     public bool raining;
     public Light DirectionalLight;
+    public Animator Tap;
 
     [Space]
     [Header ("General")]

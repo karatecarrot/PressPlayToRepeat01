@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class Sit : MonoBehaviour
 {
-    //public void Update()
-    //{
-    //    if (_GameManager.instance.isSitting == true)
-    //    {
-    //        _GameManager.instance.breakfastTrigger.SetActive(false);
-    //        _GameManager.instance.sitDown.SetActive(false);
-    //    }
-    //}
     public Transform TeleportTo;
     private void OnTriggerStay(Collider other)
     {
@@ -35,6 +27,7 @@ public class Sit : MonoBehaviour
         _GameManager.instance.Player.SetActive(true);
         _GameManager.instance.sitcam.SetActive(false);
         _GameManager.instance.Plate2.SetActive(false);
+        _GameManager.instance.sitDown.SetActive(false);
     }
 
 }
