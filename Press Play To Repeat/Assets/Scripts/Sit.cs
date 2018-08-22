@@ -17,6 +17,8 @@ public class Sit : MonoBehaviour
             _GameManager.instance.Plate2.SetActive(true);
             _GameManager.instance.gameText.text = "  ";
             _GameManager.instance.isSitting = true;
+            //Playing "Oh, now how’d that get over there?"
+            _GameManager.instance.howdThatGet.Play(0);
             StartCoroutine(KitchenAnim());
         }
     }

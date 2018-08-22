@@ -16,6 +16,7 @@ public class SkyboxChange : MonoBehaviour
                 _GameManager.instance.raining = true;
                 _GameManager.instance.Tap.SetBool("TapEnd", true);
                 _GameManager.instance.checkpoint2 = true;
+                _GameManager.instance.whydIComeHere.Play(0);
             }
         }
     }

@@ -19,7 +19,6 @@ public class _GameManager : MonoBehaviour
     #endregion
 
     public Text gameText;
-
     [Header("Skybox")]
     public Material rainSkybox;
     public GameObject rain;
@@ -52,19 +51,30 @@ public class _GameManager : MonoBehaviour
     public Animator cupboard;
     public bool checkpoint3;
 
-    [Header ("sitting")]
-    public GameObject Plate2;
-    public GameObject foodCamera;
-
     [Header("Sit")]
     public GameObject sitcam;
     public bool isSitting;
     public bool checkpoint4;
+    
+    public GameObject Plate2;
+    public GameObject foodCamera;
 
     [Header("Dishes")]
     public GameObject washingUp;
     public bool Teleported;
     public bool checkpoint5;
+    
+
+    [Header ("Audio")]
+    public AudioSource whatAmIDoing;
+    public AudioSource howdThatGet;
+    public AudioSource whydIComeHere;
+    public AudioSource heartRateMonitor;
+    public AudioSource heartDiologue;
+    public AudioSource sigh;
+    public AudioSource heyTom;
+    public AudioSource heyDarling;
+    public float diologueDelay;
 
     private void Update()
     {
@@ -74,15 +84,17 @@ public class _GameManager : MonoBehaviour
             endTrigger.SetActive(true);
         }
     }
-    public AudioSource heartRateMonitor;
+
     private void Start()
     {
         StartCoroutine(Hospital());
-        Debug.Log("heart rate monitor in 1 min");
+        Debug.Log("heart rate monitor in 30 sec");
     }
     IEnumerator Hospital()
     {
         yield return new WaitForSeconds(30);
         heartRateMonitor.Play(0);
+        new WaitForSeconds(diologueDelay);
+        heartDiologue.Play(0);
     }
 }

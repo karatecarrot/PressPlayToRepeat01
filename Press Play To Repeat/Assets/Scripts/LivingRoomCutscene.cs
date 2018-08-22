@@ -33,6 +33,7 @@ public class LivingRoomCutscene : MonoBehaviour
         //sets up the animation and waits fort it to finish.
         Debug.Log("Ending Animation");
         yield return new WaitForSeconds(17f);
+        _GameManager.instance.heyTom.Play(0);
         _GameManager.instance.Player.SetActive(true);
         _GameManager.instance.cutsceneCam.SetActive(false);
         _GameManager.instance.Dice.SetActive(false);

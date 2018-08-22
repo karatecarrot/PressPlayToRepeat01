@@ -19,6 +19,7 @@ public class Washingup : MonoBehaviour
                 _GameManager.instance.checkpoint5 = true;
                 _GameManager.instance.Player.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().rotateView = false;
                 _GameManager.instance.Player.transform.rotation = TeleportTo.rotation;
+                _GameManager.instance.whatAmIDoing.Play(0);
                 StartCoroutine(ResetRotation());
             }
         }
