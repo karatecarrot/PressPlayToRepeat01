@@ -5064,7 +5064,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -8191,7 +8191,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &832701715
 Transform:
@@ -8201,7 +8201,7 @@ Transform:
   m_GameObject: {fileID: 832701714}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.0005, y: 2.17, z: 13}
-  m_LocalScale: {x: 2.9935799, y: 1.4882314, z: 1.0103899}
+  m_LocalScale: {x: 2.9935799, y: 1.4882314, z: 0.54981786}
   m_Children: []
   m_Father: {fileID: 1226330738}
   m_RootOrder: 18
@@ -12039,7 +12039,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
