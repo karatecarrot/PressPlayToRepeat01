@@ -64,7 +64,6 @@ public class _GameManager : MonoBehaviour
     public bool Teleported;
     public bool checkpoint5;
     
-
     [Header ("Audio")]
     public AudioSource whatAmIDoing;
     public AudioSource howdThatGet;
