@@ -13,7 +13,7 @@ public class Breakfast : MonoBehaviour
             {
                 _GameManager.instance.Plate.SetActive(true);
                 _GameManager.instance.Dishes.SetActive(true);
-                _GameManager.instance.plateOnTable.Play(1);
+                _GameManager.instance.plateOnTable.Play(0);
                 _GameManager.instance.sitDown.SetActive(true);
                 _GameManager.instance.cupboard.SetBool("kitchenEnd", true);
                 _GameManager.instance.checkpoint3 = true;
