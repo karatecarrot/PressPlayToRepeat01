@@ -10,11 +10,7 @@ public class End : MonoBehaviour
         {
             _GameManager.instance.Player.SetActive(false);
             _GameManager.instance.endCamera.SetActive(true);
-            _GameManager.instance.heyDarling.Play(0);
             //playing the hey darling diologue;
-
-            _GameManager.instance.sigh.PlayDelayed(4);
-            //playing the sigh
             _GameManager.instance.gameText.text = "  ";
             StartCoroutine(EndGame());
         }
@@ -26,18 +22,17 @@ public class End : MonoBehaviour
     }
     IEnumerator EndGame()
     {
-        yield return _GameManager.instance.heyDarling;
-        new WaitForSeconds(11);
+        yield return new WaitForSeconds(2);
+        _GameManager.instance.heyDarling.Play(0);
+        yield return new WaitForSeconds(11);
         _GameManager.instance.endFade.SetActive(true);
-
         //playing the sigh
         _GameManager.instance.sigh.Play(0);
-        new WaitForSeconds(5);
-
+        yield return new WaitForSeconds(2);
         //playing the heart rate monitor.
         _GameManager.instance.heartRateMonitor.PlayDelayed(2);
         Debug.Log("Heart Rate Monitor");
-        new WaitForSeconds(5);
+       yield return new WaitForSeconds(10);
 
         //Quitting the game
         Application.Quit();
