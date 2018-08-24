@@ -33,7 +33,7 @@ public class SkyboxChange : MonoBehaviour
         // changing the intensity of the light to make to look more gloomy when raining.
         if (_GameManager.instance.raining == true)
         {
-            if (_GameManager.instance.DirectionalLight.intensity >= 0.5f)
+            if (_GameManager.instance.DirectionalLight.intensity >= 0.1f)
                 _GameManager.instance.DirectionalLight.intensity -= Time.deltaTime;
         }
     }
