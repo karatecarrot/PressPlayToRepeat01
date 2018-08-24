@@ -15,10 +15,17 @@ public class SkyboxChange : MonoBehaviour
                 _GameManager.instance.rain.SetActive(true);
                 _GameManager.instance.raining = true;
                 _GameManager.instance.Tap.SetBool("TapEnd", true);
-                _GameManager.instance.checkpoint2 = true;
                 _GameManager.instance.whydIComeHere.Play(0);
+                StartCoroutine(Checkpoint());
+                
             }
         }
+    }
+    private IEnumerator Checkpoint()
+    {
+        yield return new WaitForSeconds(4);
+        _GameManager.instance.checkpoint2 = true;
+        Debug.Log("Checkpoint 2");
     }
 
     private void Update()
@@ -30,7 +37,6 @@ public class SkyboxChange : MonoBehaviour
                 _GameManager.instance.DirectionalLight.intensity -= Time.deltaTime;
         }
     }
-
     private void OnTriggerExit(Collider other)
     {
         _GameManager.instance.gameText.text = " ";

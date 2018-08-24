@@ -73,15 +73,26 @@ public class _GameManager : MonoBehaviour
     public AudioSource sigh;
     public AudioSource heyTom;
     public AudioSource heyDarling;
+    public AudioSource clockChiming;
     public float diologueDelay;
-
+    private bool clock;
     private void Update()
     {
         if (checkpoint1 == true && checkpoint2 == true && checkpoint3 == true && checkpoint4 == true && checkpoint5 == true)
         {
             Debug.Log("End Activated");
             endTrigger.SetActive(true);
+            if (clock == false)
+            {
+                Clock();
+                clock = true;
+            }
         }
+    }
+    void Clock()
+    {
+        Debug.Log("chiming clock...");
+        clockChiming.Play(0);
     }
 
     private void Start()
